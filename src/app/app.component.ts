@@ -10,5 +10,23 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'practise';
+  password = ''
+  canUseNumbers = false
+
+  onButtonClick() {
+    this.password = 'new password'
+    console.log('button clicked')
+  }
+
+  flipCanUseNumbersValue() {
+    this.canUseNumbers = !this.canUseNumbers
+  }
+
+  // get password() {
+  //   return ''
+  // }
+
+  // set password(p: string) {
+  //   this.password = p
+  // }
 }
